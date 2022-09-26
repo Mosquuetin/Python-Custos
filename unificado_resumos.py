@@ -3,10 +3,9 @@ import msoffcrypto
 import io
 import os
 
-#caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
-#caminho_final = os.getcwd()+"\Auxiliar\Resumos.csv"
-caminho_inicial = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Auxiliar\Cronograma.xlsx"
-caminho_final = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Análises\Análises Gerais\Resumos.csv"
+caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
+caminho_final = os.getcwd()+"\Auxiliar\Resumos.csv"
+
 
 df = pd.read_excel(caminho_inicial, sheet_name="Parâmetros Python")
 aba_inicial = list(df['Aba Inicial'])
