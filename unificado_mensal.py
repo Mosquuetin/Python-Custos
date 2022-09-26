@@ -4,10 +4,8 @@ import io
 import os
 import numpy as np
 
-#caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
-#caminho_final = os.getcwd()+"\Custos Consolidados\\"
-caminho_inicial = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Auxiliar\Cronograma.xlsx"
-caminho_final = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Custos Consolidados\\"
+caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
+caminho_final = os.getcwd()+"\Custos Consolidados\\"
 
 df = pd.read_excel(caminho_inicial, sheet_name="Parâmetros Python")
 aba_inicial = list(df['Aba Inicial'])
