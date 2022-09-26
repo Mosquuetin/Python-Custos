@@ -1,10 +1,9 @@
 import pandas as pd
 import os
 
-#caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
-#caminho_final = os.getcwd()+"\Análises\Análises Gerais\\"
-caminho_inicial = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Auxiliar\Cronograma.xlsx"
-caminho_final = os.getcwd()[ : -10]+r"\Directa24 Dropbox\Auditoria\Gerencial (temporaria)\2022\Projetos Python\Análises\Análises Gerais\\"
+caminho_inicial = os.getcwd()+"\Auxiliar\Cronograma.xlsx"
+caminho_final = os.getcwd()+"\Análises\Análises Gerais\\"
+
 
 df = pd.read_excel(caminho_inicial, sheet_name="Parâmetros Python")
 aba_inicial = list(df['Aba Inicial'])
